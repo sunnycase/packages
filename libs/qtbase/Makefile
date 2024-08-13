@@ -88,7 +88,7 @@ EXTRA_CFLAGS += $(FPIC) -ffunction-sections -fdata-sections -flto
 EXTRA_LDFLAGS += -Wl,--gc-sections,--as-needed
 
 CONFIGURE_ARGS = \
-		-sysroot $(STAGING_DIR) \
+		-sysroot $(TOOLCHAIN_DIR) \
 		-hostprefix $(STAGING_DIR_HOSTPKG) \
 		-extprefix $(STAGING_DIR)/usr \
 		-prefix /usr \
